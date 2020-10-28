@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Download linkedin video</title>
 </head>
+
 <body>
 
-  <h1 id="h1Identifier">Download videos do LinkedIn</h1>
+  <h1>Download de videos do LinkedIn</h1>
 
-  <label>URL da pagina contendo video: </label></label><input type="text" id="inputDownloadVidId">
-  <button id="downloadVidId">Download</button>
+  <label>URL da pagina contendo video:</label>
+  <input type="text" id="id_inputUrl" />
+  <button id="id_downloadVideo">Download</button>
 
+  <!-- START SCRIPTS -->
   <script>
-    document.getElementById("h1Identifier").innerHTML = "Hello JavaScript!";
-    document.getElementById("downloadVidId").addEventListener("click", function () {
-    console.log(document.getElementById("inputDownloadVidId").value)
-    
+    $.get("https://www.linkedin.com/posts/ricardoamorimricam_mais-de-um-s%C3%A9culo-de-evolu%C3%A7%C3%A3o-dos-gastos-ugcPost-6724466845987942400-5ijy", function (data) {
+      let result = data;
+      console.log("result -> ",result)
     });
   </script>
-  
+  <!-- END SCRIPTS -->
+
 </body>
+
 </html>
