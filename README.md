@@ -28,7 +28,7 @@
 - ```&quot;``` - Substitui " (aspas) na url pois dependendo do que acompanha as aspas o caracter pode ser formatado com outro simbolo.
 - ```Web Scraping``` - Tecnica que consiste em extrair informacoes relevantes de determinados sites para depois serem analisadas
 
-## Links uetis
+## Links úteis
 
 - Web Scraping com NodeJs: https://medium.com/@fabiojanio/node-js-web-scraping-com-puppeteer-29dd974eb042
 - Web Scraping com NodeJs (2) : https://pusher.com/tutorials/web-scraper-node
